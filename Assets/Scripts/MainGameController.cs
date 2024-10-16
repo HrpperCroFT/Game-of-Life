@@ -9,6 +9,7 @@ using UnityEngine.UI;
 public class MainGameController : MonoBehaviour {
     [SerializeField] private int m_Width;
     [SerializeField] private int m_Height;
+
     [SerializeField] private Scrollbar m_UpdatesPerSecondScroll;
     [SerializeField] private Scrollbar m_RandomizationCoefficientScroll;
 
@@ -25,9 +26,9 @@ public class MainGameController : MonoBehaviour {
     private float m_UpdatesPerSecond;
     private float m_RandomizationCoefficient;
 
-    private Vector3 shift = new Vector3(0f, -4f, 0f);
+    private Vector3 shift = new(0f, -4f, 0f);
 
-    private const float MAX_UPDATES_PER_SECOND = 30;
+    private const float MAX_UPDATES_PER_SECOND = 30f;
 
     // Start is called before the first frame update
     void Start() {
